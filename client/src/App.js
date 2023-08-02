@@ -19,16 +19,15 @@ function App() {
       data: { todos },
     } = data;
 
-    const myContent = JSON.stringify(data, null, 2); // Pretty-print the JSON
+    const myContent = JSON.stringify(data, null, 2);
     setMy(myContent);
-    //setData(data);
   };
 
   queryGraphQLServer();
   return (
     <div className="App">
       <header className="App-header">{myContent}</header>
-      {/* <h1 className="App-header">{data}</h1> */}
+      
     </div>
   );
 }
