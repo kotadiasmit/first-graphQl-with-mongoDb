@@ -14,12 +14,11 @@ function App() {
       }),
     });
     const data = await response.json();
-    console.log(data);
+    
     const {
       data: { todos },
     } = data;
-    console.log(todos);
-    console.log(Object.values(data)[0]);
+
     const myContent = JSON.stringify(data, null, 2); // Pretty-print the JSON
     setMy(myContent);
     //setData(data);
